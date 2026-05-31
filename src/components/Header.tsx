@@ -104,7 +104,7 @@ export default function Header() {
       href="/products"
       className="flex items-center gap-2 px-4 py-2 bg-honey text-white rounded-full hover:bg-honey-dark transition-colors"
     >
-      <span className="text-sm font-medium hidden sm:block">
+      <span className="text-sm font-medium ">
         Nos Miels
       </span>
     </Link>

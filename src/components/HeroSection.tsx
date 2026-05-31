@@ -103,21 +103,6 @@ export default function HeroSection() {
        
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 transition-all duration-700 delay-1000 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <a href="#histoire" className="flex flex-col items-center gap-2 group">
-          <span className="text-xs tracking-widest text-dark/40 uppercase">
-            Découvrir
-          </span>
-          <div className="w-6 h-10 border-2 border-dark/20 rounded-full flex justify-center pt-2 group-hover:border-honey transition-colors">
-            <div className="w-1 h-2 bg-honey rounded-full animate-bounce" />
-          </div>
-        </a>
-      </div>
     </section>
   );
 }
