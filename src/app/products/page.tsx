@@ -313,12 +313,7 @@ export default function ProductsPage() {
                         <p className="text-cream-200/40 text-xs">{product.weight}</p>
                         <p className="text-honey text-xl font-medium">{product.price}</p>
                       </div>
-                      <Link
-                        href={`/produits/${product.id}`}
-                        className="px-4 py-2 rounded-full border border-honey/30 text-honey hover:bg-honey hover:text-dark transition-all duration-300 text-sm"
-                      >
-                        Détails
-                      </Link>
+                     
                     </div>
                   </div>
                 </div>
@@ -330,32 +325,6 @@ export default function ProductsPage() {
                 <p className="text-cream-200/60">Aucun produit dans cette catégorie.</p>
               </div>
             )}
-
-            {/* CTA Section */}
-            <div className="mt-20 text-center">
-              <div className="bg-gradient-to-r from-honey/5 via-honey/10 to-honey/5 rounded-2xl p-8 md:p-12 border border-honey/20">
-                <h3 className="text-2xl md:text-3xl font-serif text-cream-100 mb-4">
-                  Vous cherchez un produit spécifique ?
-                </h3>
-                <p className="text-cream-200/80 mb-6">
-                  Contactez-nous pour une commande personnalisée ou pour toute question sur nos produits.
-                </p>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-3 px-8 py-3 bg-honey text-dark rounded-full font-medium hover:bg-honey-light transition-colors"
-                >
-                  Nous contacter
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M5 12H19M19 12L12 5M19 12L12 19"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
           </div>
         </section>
 

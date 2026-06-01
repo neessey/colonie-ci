@@ -68,35 +68,35 @@ export default function Header() {
             {/* Right side buttons */}
             <div className="flex items-center gap-2">
 
-  {pathname !== "/" && (
-    <button
-      type="button"
-      onClick={() => setIsCartOpen(true)}
-      className="relative flex items-center gap-2 px-4 py-2 bg-dark-100 text-white rounded-full hover:bg-dark-50 transition-colors"
+  {pathname !== "/" && pathname !== "/contact" && (
+  <button
+    type="button"
+    onClick={() => setIsCartOpen(true)}
+    className="relative flex items-center gap-2 px-4 py-2 bg-dark-100 text-white rounded-full hover:bg-dark-50 transition-colors"
+  >
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-<svg
-  width="20"
-  height="20"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L5.5 19M17 13L18.5 19M9 21H11M15 21H17"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  />
-</svg>
+      <path
+        d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L5.5 19M17 13L18.5 19M9 21H11M15 21H17"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
 
-      {totalItems > 0 && (
-        <span className="absolute -top-2 -right-2 w-5 h-5 bg-honey text-dark text-xs font-bold rounded-full flex items-center justify-center">
-          {totalItems}
-        </span>
-      )}
-    </button>
-  )}
+    {totalItems > 0 && (
+      <span className="absolute -top-2 -right-2 w-5 h-5 bg-honey text-dark text-xs font-bold rounded-full flex items-center justify-center">
+        {totalItems}
+      </span>
+    )}
+  </button>
+)}
 
   {/* Nos Miels : PAS sur /products */}
   {pathname !== "/products" && (
@@ -110,6 +110,7 @@ export default function Header() {
     </Link>
   )}
 
+
 </div>
               
           </nav>
@@ -121,13 +122,6 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-6 py-8">
               <nav className="flex flex-col space-y-4">
                 <Link
-                  href="#histoire"
-                  className="text-2xl font-serif text-honey "
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Notre Histoire
-                </Link>
-                <Link
                   href="/products"
                   className="text-2xl font-serif text-honey "
                   onClick={() => setIsMenuOpen(false)}
@@ -135,14 +129,7 @@ export default function Header() {
                   Nos Produits
                 </Link>
                 <Link
-                  href="#engagements"
-                  className="text-2xl font-serif text-honey "
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Nos Engagements
-                </Link>
-                <Link
-                  href="#contact"
+                  href="/contact"
                   className="text-2xl font-serif text-honey "
                   onClick={() => setIsMenuOpen(false)}
                 >
