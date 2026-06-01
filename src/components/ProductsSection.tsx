@@ -128,20 +128,7 @@ export default function ProductsSection() {
                     <p className="text-cream-200/40 text-xs">{product.weight}</p>
                     <p className="text-honey text-lg font-medium">{product.price}</p>
                   </div>
-                  <button
-                    type="button"
-                    className="w-12 h-12 flex items-center justify-center rounded-full border border-honey/30 text-honey hover:bg-honey hover:text-dark transition-all duration-300"
-                  >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M5 12H19M19 12L12 5M19 12L12 19"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -155,7 +142,7 @@ export default function ProductsSection() {
           }`}
         >
           <a
-            href="#contact"
+            href="/products"
             className="inline-flex items-center gap-3 px-8 py-4 bg-honey text-dark rounded-full font-medium hover:bg-honey-light transition-colors"
           >
             Commander maintenant

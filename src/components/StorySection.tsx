@@ -72,7 +72,7 @@ export default function StorySection() {
               À ce niveau, Colonie n&apos;a pas de concurrent.
             </p>
             <a
-              href="#produits"
+              href="/products"
               className="inline-flex items-center gap-3 text-honey hover:text-honey-dark transition-colors group"
             >
               <span className="text-sm font-medium tracking-wider uppercase">
