@@ -153,7 +153,7 @@ export default function LocationSection() {
             </div>
 
             <a
-              href="#contact"
+              href="/contact"
               className="flex items-center gap-3 text-honey hover:text-honey-dark transition-colors group"
             >
               <div className="w-10 h-10 border border-honey rounded-full flex items-center justify-center group-hover:bg-honey group-hover:text-white transition-all">
