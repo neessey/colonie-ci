@@ -135,7 +135,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                         </Link>
                         <button
                           onClick={onClose}
-                          className="mt-3 flex w-full justify-center rounded-full border border-honey/30 px-6 py-3 text-hover:text-dark text-sm"
+                          className="mt-3 flex w-full justify-center rounded-full border border-honey/30 px-6 py-3 text-honey text-sm"
                         >
                           Continuer mes achats
                         </button>

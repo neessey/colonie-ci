@@ -224,3 +224,12 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes hivePop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.35); filter: brightness(1.4); }
+  100% { transform: scale(1); }
+}
+.animate-hive-pop {
+  animation: hivePop 0.7s ease-out;
+}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
+import { AuthProvider } from "@/context/AuthContext";
 
 export const metadata: Metadata = {
   title: "Colonie.ci | Miel Premium de Côte d'Ivoire",
@@ -21,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className="antialiased">
-        <CartProvider>
-        {children}
-      </CartProvider> 
+        <AuthProvider>
+          <CartProvider>{children}</CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );
