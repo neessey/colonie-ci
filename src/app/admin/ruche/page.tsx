@@ -7,6 +7,7 @@ import { getRucheProgress } from "@/lib/ruche";
 import Header from "@/components/Header";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import { withAdminAuth } from "@/components/admin/withAdminAuth";
 
 interface User {
   uid: string;
@@ -25,7 +26,7 @@ interface User {
   };
 }
 
-export default function AdminRuchePage() {
+function AdminRuchePage() {
   const { user, loading: authLoading } = useAuth();
   const router = useRouter();
   const [users, setUsers] = useState<User[]>([]);
@@ -417,3 +418,4 @@ export default function AdminRuchePage() {
     </>
   );
 }
+export default withAdminAuth(AdminRuchePage);

@@ -67,7 +67,7 @@ export default function AdminLoginPage() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="text-4xl mb-4">🔄</div>
+          <div className="text-4xl mb-4"></div>
           <p className="text-gray-500">Redirection vers le dashboard...</p>
         </div>
       </div>

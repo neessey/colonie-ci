@@ -128,9 +128,14 @@ export default function Footer() {
           <p className="text-sm text-cream-200/40">
             2026 Colonie.ci - Tous droits réservés
           </p>
-          <p className="text-xs text-cream-200/30">
-            Miel 100% naturel de Côte d&apos;Ivoire
-          </p>
+       
+{/* ✅ Lien vers l'administration */}
+<Link 
+  href="/admin/login" 
+  className="text-xs text-cream-200/30"
+>
+  Miel 100% naturel de Côte d&apos;Ivoire
+</Link>
         </div>
       </div>
     </footer>
