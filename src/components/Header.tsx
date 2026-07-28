@@ -71,7 +71,7 @@ export default function Header() {
             {/* Right side buttons */}
             <div className="flex items-center gap-2">
               {/* Bouton Panier - Caché sur /ma-ruche */}
-              {!hideCart && pathname !== "/" && pathname !== "/contact" && pathname !== "/admin/ruche" && pathname !== "/admin/setup" &&(
+              {!hideCart && pathname !== "/" && pathname !== "/contact" && pathname !== "/admin/ruche" && pathname !== "/admin/setup" && pathname !== "/chekout" && pathname !== "/payment-sucess" &&(
                 <button
                   type="button"
                   onClick={() => setIsCartOpen(true)}
